@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tabla de datos y gráfico</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href=" https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css ">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="form">
+          <input type="date" required="required" value="2018-02-27" min="2010-01-01" max="2018-12-31" placeholder="Fecha inicio" id="f_inicio">
+          <input type="date" required="required" value="2018-03-11" min="2010-01-01" max="2018-12-31" placeholder="Fecha Fin" id="f_fin">
+          <input type="button" value="Enviar" id="enviar">
+        </div>
+        <h2>Tabla</h2>
+        <p>Tabla generada a partir de datos obtenidos de un servidor.</p>
+        <table id="tabla" class="table table-sm table-striped table-dark table-bordered table-hover" cellspacing="0" width="100%"
+          data-order='[[ 1, "asc" ]]' data-page-length='10'>
+          <thead class="thead-dark">
+            <tr>
+              <th>ID</th>
+              <th>Mostrar</th>
+              <th>Fecha</th>
+              <th>Ti1</th>
+              <th>Ti2</th>
+              <th>Ti3</th>
+              <th>Ti4</th>
+              <th>D1</th>
+              <th>D2</th>
+              <th>D3</th>
+              <th>D4</th>
+              <th>T1 Ralentí</th>
+              <th>T1 Parado</th>
+              <th>T Conducido</th>
+              <th>V Máxima</th>
+              <th>V Media</th>
+              <th>A Fecha</th>
+              <th>A Coor</th>
+              <th>P Fecha</th>
+              <th>P Coor</th>
+              <th>Consumo</th>
+              <th>Consumo Medio</th>
+              <th>Consumo Ralentí</th>
+              <th>Consumo Conducción</th>
+              <th>D1 Parado</th>
+              <th>Consumo Medio Conducción</th>
+              <th>Veh Desc</th>
+              <th>A Dirección</th>
+              <th>P Dirección</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>ID</th>
+              <th>Mostrar</th>
+              <th>Fecha</th>
+              <th>Ti1</th>
+              <th>Ti2</th>
+              <th>Ti3</th>
+              <th>Ti4</th>
+              <th>D1</th>
+              <th>D2</th>
+              <th>D3</th>
+              <th>D4</th>
+              <th>T1 Ralentí</th>
+              <th>T1 Parado</th>
+              <th>T Conducido</th>
+              <th>V Máxima</th>
+              <th>V Media</th>
+              <th>A Fecha</th>
+              <th>A Coor</th>
+              <th>P Fecha</th>
+              <th>P Coor</th>
+              <th>Consumo</th>
+              <th>Consumo Medio</th>
+              <th>Consumo Ralentí</th>
+              <th>Consumo Conducción</th>
+              <th>D1 Parado</th>
+              <th>Consumo Medio Conducción</th>
+              <th>Veh Desc</th>
+              <th>A Dirección</th>
+              <th>P Dirección</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center">
+      <div class="col-sm-12 col-md-2 col-lg-2"></div>
+      <div class="col-sm-12 col-md-8 col-lg-8">
+        <h2>Gráfico</h2>
+        <p>Kms/Dia</p>
+        <div id="chart"></div>
+      </div>
+      <div class="col-sm-12 col-md-2 col-lg-2"></div>
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="./main.js"></script>
+
+</html>

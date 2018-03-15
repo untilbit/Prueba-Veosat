@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+.form {
+    padding: 40px;
+}
+
+#chart {
+    width: 800px;
+    height: 350px;
+    padding: 20px 0 40px 0;
+}
